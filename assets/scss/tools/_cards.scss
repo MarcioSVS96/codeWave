@@ -1,0 +1,44 @@
+@import 'mixin';
+@import 'variables';
+
+#value{
+    height: 90vh;
+    width: 100%;
+    @include center(center);
+    background: linear-gradient(to right,$primary-color, $secundary-color);
+    position: relative;
+
+    .container{
+        @include column;
+
+        .subtitle{
+            text-align: center;
+            @include column;
+            gap: $gap;
+
+            h2{
+                font-size: $font-larger;
+                color: $light-color;
+            }
+            hr{
+                margin: auto;
+            }
+            p{
+                font-size: $font-small;
+                font-weight: $weight-normal;
+                color: $light-color;
+            }
+        }
+        .cards{
+            @include center(space-between);
+        }
+    }
+    .top{
+        position: absolute;
+        top: 0;
+    }
+    .bot{
+        position: absolute;
+        bottom: 0;
+    }
+}
