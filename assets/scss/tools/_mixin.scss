@@ -1,0 +1,10 @@
+@mixin center($justify: space-between) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+@mixin column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

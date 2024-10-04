@@ -1,0 +1,9 @@
+@import 'mixin';
+@import 'variables';
+
+header{
+    @include center(space-between);
+    background: $primary-color;
+    height: 15vh;
+    padding: $desktop;
+}
