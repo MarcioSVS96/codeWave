@@ -1,0 +1,26 @@
+.st1{opacity:.3;fill:#fff;enable-background:new;}
+.st2{opacity:.5;fill:#fff;enable-background:new;}
+.st3{opacity:.7;fill:#fff;enable-background:new;}
+.st4{opacity:1;fill:#fff;enable-background:new;}
+.wave{
+  height: 200px;
+  padding: 2rem 0;
+}
+@media (max-width: 1076px) {
+  .corpo {
+    height: 180px;
+    padding: 1.8rem 0 0 0;
+  }
+}
+@media (max-width: 630px) {
+  .corpo {
+    height: 160px;
+    padding: 1.6rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .corpo {
+    height: 120px;
+    padding: 1.4rem 0;
+  }
+}
