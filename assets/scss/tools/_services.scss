@@ -1,0 +1,66 @@
+@import 'mixin';
+@import 'variables';
+
+#services{
+    height: auto;
+    width: 100%;
+    
+    .container{
+        @include column;
+        gap: $gap;
+
+        .subtitle{
+            @include column;
+            gap: $gap;
+
+            h2{
+                font-size: $font-larger;
+                font-weight: $weight-bold;
+                color: $primary-color;
+            }
+            hr{
+                width: 100px;
+                height: 3px;
+                margin: auto;
+            }
+        }
+
+        article{
+            @include center(space-between);
+
+            .text{
+                width: 50%;
+                @include column;
+                gap: $gap;
+
+
+                h3{
+                    font-size: $font-medium;
+                    font-weight: $weight-normal;
+                    color: $primary-color;
+                }
+
+                p{
+                    font-size: $font-small;
+                    font-weight: $weight-light;
+                    color: $dark-color;
+                }
+
+                a{
+                    position: relative;
+                    padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+                    margin: 0;
+                    border: 2px solid $primary-color;
+                    background-color: $light-color;
+                    display: block;
+                    color: $primary-color;
+                    transition: .4s ease;
+                    border-radius: 50rem;
+                    width: fit-content;
+                    font-size: $font-small;
+                    font-weight: $weight-normal;
+                }
+            }
+        }
+    }
+}

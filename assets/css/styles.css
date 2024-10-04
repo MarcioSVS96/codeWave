@@ -7,6 +7,14 @@
   list-style: none;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85%;
+  padding: 0 8%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -29,7 +37,7 @@ nav {
 nav a {
   color: #fff;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 #home {
@@ -38,42 +46,36 @@ nav a {
   margin-top: 15vh;
   background: linear-gradient(to right, #0f0125, #3c1b95);
 }
-#home .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 85%;
-  padding: 0 8%;
-}
-#home .container .title {
+#home .title {
   display: flex;
   flex-direction: column;
   width: 50%;
   gap: 1.5rem;
 }
-#home .container .title h1 {
+#home .title h1 {
   font-size: 5rem;
   font-weight: 900;
   line-height: 1;
   color: #fff;
 }
-#home .container .title p {
+#home .title p {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
 }
-#home .container .title a {
+#home .title a {
   position: relative;
   padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
-  font-weight: 700;
   margin: 0;
-  border: 2px solid #212121;
+  border: 2px solid #3c1b95;
   background-color: #fff;
   display: block;
-  color: #0f0125;
+  color: #3c1b95;
   transition: 0.4s ease;
   border-radius: 50rem;
   width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .st1 {
@@ -107,20 +109,76 @@ nav a {
 @media (max-width: 1076px) {
   .corpo {
     height: 180px;
-    padding: 1.8rem 0 0 0;
   }
 }
 @media (max-width: 630px) {
   .corpo {
     height: 160px;
-    padding: 1.6rem 0;
   }
 }
 @media (max-width: 576px) {
   .corpo {
     height: 120px;
-    padding: 1.4rem 0;
   }
+}
+#services {
+  height: auto;
+  width: 100%;
+}
+#services .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#services .container .subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#services .container .subtitle h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #3c1b95;
+}
+#services .container .subtitle hr {
+  width: 100px;
+  height: 3px;
+  margin: auto;
+}
+#services .container article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#services .container article .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#services .container article .text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3c1b95;
+}
+#services .container article .text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #212121;
+}
+#services .container article .text a {
+  position: relative;
+  padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+  margin: 0;
+  border: 2px solid #3c1b95;
+  background-color: #fff;
+  display: block;
+  color: #3c1b95;
+  transition: 0.4s ease;
+  border-radius: 50rem;
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

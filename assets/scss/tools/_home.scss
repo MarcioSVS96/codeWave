@@ -6,12 +6,6 @@
     width: 100%;
     margin-top: 15vh;
     background: linear-gradient(to right,$secundary-color,$primary-color );
-    .container{
-        @include center(space-between);
-        height: 85%;
-        padding: $desktop;
-
-
         .title{
             @include column;
             width: 50%;
@@ -25,24 +19,25 @@
             }
     
             p{
-                font-size: $font-smile;
+                font-size: $font-small;
                 font-weight: $weight-normal;
                 color: $light-color;
             }
             a{
                 position: relative;
                 padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
-                font-weight: 700;
                 margin: 0;
-                border: 2px solid $dark-color;
+                border: 2px solid $primary-color;
                 background-color: $light-color;
                 display: block;
-                color: $secundary-color;
+                color: $primary-color;
                 transition: .4s ease;
                 border-radius: 50rem;
                 width: fit-content;
+                font-size: $font-small;
+                font-weight: $weight-normal;
             }
         }
-    }
+    
 }
 
