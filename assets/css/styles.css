@@ -370,4 +370,28 @@ nav a {
   transition: 0.3s ease;
 }
 
+#cta {
+  height: 65vh;
+  width: 100%;
+  background-image: url(/assets/img/background-cta.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #c4abd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+#cta h2 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+#cta p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
 /*# sourceMappingURL=styles.css.map */

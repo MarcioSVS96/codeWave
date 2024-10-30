@@ -1,0 +1,27 @@
+@import 'mixin';
+@import 'variables';
+
+#cta{
+    height: 65vh;
+    width: 100%;
+    background-image: url(/assets/img/background-cta.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #c4abd7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+
+    h2{
+        font-size: $font-larger;
+        color: $light-color;
+    }
+    p{
+        font-size: $font-small;
+        color: $light-color;
+    }
+}
