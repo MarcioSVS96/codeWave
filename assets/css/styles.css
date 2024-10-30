@@ -183,49 +183,94 @@ nav a {
   font-weight: 700;
 }
 
-#value {
-  height: 90vh;
+#plans {
+  height: auto;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
   background: linear-gradient(to right, #3c1b95, #0f0125);
   position: relative;
+  padding: 3rem 0;
 }
-#value .container {
+#plans .container {
   display: flex;
   flex-direction: column;
+  align-items: normal;
+  gap: 1rem;
 }
-#value .container .subtitle {
+#plans .container .subtitle {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
-#value .container .subtitle h2 {
+#plans .container .subtitle h2 {
   font-size: 3.5rem;
   color: #fff;
 }
-#value .container .subtitle hr {
+#plans .container .subtitle hr {
   margin: auto;
 }
-#value .container .subtitle p {
+#plans .container .subtitle p {
   font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
 }
-#value .container .cards {
+#plans .container .cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
+  text-align: center;
 }
-#value .top {
-  position: absolute;
-  top: 0;
+#plans .container .cards hr {
+  margin: 0.3rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-#value .bot {
-  position: absolute;
-  bottom: 0;
+#plans .container .cards .card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 340px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+#plans .container .cards .card h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+#plans .container .cards .card p {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+#plans .container .cards .card ul {
+  text-align: start;
+}
+#plans .container .cards .card ul li {
+  font-size: 1.2rem;
+}
+#plans .container .cards .card a {
+  width: fit-content;
+  margin: 1rem auto 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  transition: 0.3s ease;
+}
+#plans .container .cards .card a:hover {
+  background-color: #fff;
+  color: #3c1b95;
+  transition: 0.3s ease;
+}
+#plans .container .cards .card:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /*# sourceMappingURL=styles.css.map */

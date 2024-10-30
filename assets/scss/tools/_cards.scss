@@ -1,20 +1,25 @@
 @import 'mixin';
 @import 'variables';
 
-#value{
-    height: 90vh;
+#plans{
+    height: auto;
     width: 100%;
-    @include center(center);
+    display: flex;
+    align-items: start;
     background: linear-gradient(to right,$primary-color, $secundary-color);
     position: relative;
+    padding: 3rem 0;
+
 
     .container{
         @include column;
+        align-items: normal;
+        gap: 1rem;
 
         .subtitle{
             text-align: center;
             @include column;
-            gap: $gap;
+            gap: .5rem;
 
             h2{
                 font-size: $font-larger;
@@ -31,14 +36,61 @@
         }
         .cards{
             @include center(space-between);
+            gap: $gap;
+            text-align: center;
+
+            hr{
+                margin: .3rem 0;
+                border:1px solid rgba(255, 255, 255, 0.3);
+            }
+
+            .card{
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 10px;
+                padding: 1rem;
+                width: 340px;
+                color: $light-color;
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+
+                h5{
+                    font-size: 1.8rem;
+                    font-weight: $weight-normal;
+                }
+                p{
+                    font-size: $font-small;
+                    font-weight: $weight-bold;
+                }
+                ul{
+                    text-align: start;
+
+                    li{
+                        font-size: $font-small;
+                    }
+                }
+                a{
+                    width: fit-content;
+                    margin: 1rem auto 0;
+                    font-size: $font-small;
+                    font-weight: $weight-normal;
+                    padding: .5rem 1rem;
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 5px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    color: $light-color;
+                    transition: .3s ease;
+                }
+                a:hover{
+                    background-color: $light-color;
+                    color: $primary-color;
+                    transition: .3s ease;
+                }
+            }
+            .card:hover{
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
         }
-    }
-    .top{
-        position: absolute;
-        top: 0;
-    }
-    .bot{
-        position: absolute;
-        bottom: 0;
     }
 }
