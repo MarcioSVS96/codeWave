@@ -443,7 +443,6 @@ nav a {
   text-align: left;
   width: 100%;
   transition: background-color 0.3s ease;
-  margin-top: 10px;
 }
 #faq .container .faq-item .faq-question:hover {
   background-color: rgba(59, 27, 149, 0.9254901961);
