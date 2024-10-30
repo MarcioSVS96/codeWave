@@ -65,18 +65,21 @@ nav a {
   color: #fff;
 }
 #home .title a {
-  position: relative;
-  padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+  padding: 0.5rem 1rem;
   margin: 0;
   border: 2px solid #3c1b95;
   background-color: #fff;
   display: block;
   color: #3c1b95;
   transition: 0.4s ease;
-  border-radius: 50rem;
+  border-radius: 5px;
   width: fit-content;
   font-size: 1.2rem;
   font-weight: 700;
+}
+#home .title a:hover {
+  background-color: #3c1b95;
+  color: #fff;
 }
 
 .st1 {

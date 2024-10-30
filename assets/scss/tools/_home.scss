@@ -24,19 +24,24 @@
                 color: $light-color;
             }
             a{
-                position: relative;
-                padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+                padding: .5rem 1rem;
                 margin: 0;
                 border: 2px solid $primary-color;
                 background-color: $light-color;
                 display: block;
                 color: $primary-color;
                 transition: .4s ease;
-                border-radius: 50rem;
+                border-radius: 5px;
                 width: fit-content;
                 font-size: $font-small;
                 font-weight: $weight-normal;
+
+                
             }
+            a:hover{
+                    background-color: $primary-color;
+                    color: $light-color;
+                }
         }
     
 }
