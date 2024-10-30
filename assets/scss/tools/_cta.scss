@@ -2,26 +2,34 @@
 @import 'variables';
 
 #cta{
-    height: 65vh;
+    height: 55vh;
     width: 100%;
     background-image: url(/assets/img/background-cta.webp);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: left;
     background-color: #c4abd7;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    text-align: center;
-
-    h2{
-        font-size: $font-larger;
-        color: $light-color;
-    }
-    p{
-        font-size: $font-small;
-        color: $light-color;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin-left: auto;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        background: linear-gradient(to right,#c4abd7,$primary-color, $secundary-color);
+        height: 100%;
+    
+        h2{
+            font-size: $font-medium;
+            color: $light-color;
+        }
+        p{
+            font-size: $font-small;
+            color: $light-color;
+        }
     }
 }
