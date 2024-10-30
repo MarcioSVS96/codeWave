@@ -462,4 +462,44 @@ nav a {
   font-weight: 500;
 }
 
+footer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #0f0125, #3c1b95);
+  padding: 3rem 0;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .footer-top nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+footer .container .footer-top ul {
+  display: flex;
+  gap: 1rem;
+}
+footer .container .footer-top ul li a {
+  font-size: 2rem;
+  color: #fff;
+}
+footer .container .copy p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+footer .container .copy p a {
+  color: #0cd5c9;
+}
+
 /*# sourceMappingURL=styles.css.map */
