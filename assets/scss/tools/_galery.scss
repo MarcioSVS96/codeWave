@@ -1,0 +1,106 @@
+@import 'mixin';
+@import 'variables';
+
+#galery{
+    @include column;
+    align-items: center;
+    padding: 2rem 4rem;
+    width: 100% ;
+    background-color: $light-color;
+    gap: 1rem;
+
+    h2{
+        font-size: $font-larger;
+        font-weight: $weight-bold;
+        color: $primary-color;
+    }
+
+    .galery-portfolio{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        width: 100%;
+
+        figure{
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            cursor:default;
+            border: 1px solid $light-color;
+            border-radius: 10px;
+
+            img{
+                height: 100%;
+                width: 100%;
+                
+            }
+
+            .text-portfolio{
+                width: 100%;
+                height: 0;
+                background: linear-gradient($primary-color,rgba(255, 255, 255, 0.3) );
+                position: absolute;
+                border-radius: 10px;
+                left: 0;
+                bottom: 0;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: .5rem;
+                transition: height 0.5s;
+
+                h4{
+                    color: $light-color;
+                    font-size: $font-medium;
+                }
+
+                p{
+                    color: $light-color;
+                    font-size: $font-small;
+                }
+
+                a{
+                    width: fit-content;
+                    margin: 1rem auto 0;
+                    font-size: $font-small;
+                    font-weight: $weight-normal;
+                    padding: .5rem 1rem;
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 5px;
+                    background-color: $light-color;
+                    color: $primary-color;
+                    transition: .3s ease;
+                }
+                a:hover{
+                    background-color: $primary-color;
+                    color: $light-color;
+                    transition: .3s ease;
+                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+        figure:hover .text-portfolio{
+            height: 100%;
+        }
+    }
+    a{
+        width: fit-content;
+        margin: 1rem auto 0;
+        font-size: $font-small;
+        font-weight: $weight-normal;
+        padding: .5rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        background-color: #8477a1;
+        color: $light-color;
+        transition: .3s ease;
+    }
+    a:hover{
+        background-color: $light-color;
+        color: $primary-color;
+        transition: .3s ease;
+    }
+}
