@@ -6,6 +6,7 @@
     width: 100%;
     margin-top: 15vh;
     background: linear-gradient(to right,$secundary-color,$primary-color );
+    padding: 3rem 0;
         .title{
             @include column;
             width: 50%;
@@ -41,7 +42,8 @@
             a:hover{
                     background-color: $primary-color;
                     color: $light-color;
-                }
+                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5)
+            }
         }
     
 }
