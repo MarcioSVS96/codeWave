@@ -4,7 +4,7 @@
 #services{
     height: auto;
     width: 100%;
-    padding: 3rem 0;
+    padding: $container-padding;
     
     .container{
         @include column;
@@ -48,22 +48,22 @@
                 }
 
                 a{
-                    padding: .5rem 1rem;
+                    padding: $link-padding;
                     margin: 0;
                     border: 2px solid $primary-color;
                     background-color: $light-color;
                     display: block;
                     color: $primary-color;
                     transition: .4s ease;
-                    border-radius: 5px;
-                    width: fit-content;
+                    border-radius: $button-radius;
+                    width: $fit-content-width;
                     font-size: $font-small;
                     font-weight: $weight-normal;
                 }
                 a:hover{
                     background-color: $primary-color;
                     color: $light-color;
-                    box-shadow: 0 0 10px #3b1b95ec;
+                    box-shadow: 0 0 10px $faq-box-shadow;
             }
             }
         }

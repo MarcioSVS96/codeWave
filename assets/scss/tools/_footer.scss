@@ -7,7 +7,7 @@ footer{
     display: flex;
     flex-direction: column;
     background: linear-gradient(to right,$secundary-color,$primary-color );
-    padding: 3rem 0;
+    padding: $container-padding;
 
     .container{
         display: flex;

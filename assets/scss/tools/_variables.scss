@@ -14,10 +14,18 @@ $primary-color:#3c1b95;
 $secundary-color:#0f0125;
 $light-color:#fff;
 $dark-color:#212121;
+$cta-bg-color: #c4abd7;
+$link-hover-box-shadow: rgba(255, 255, 255, 0.5); 
+$faq-box-shadow: rgba(59, 27, 149, 0.93); 
 
-//Padding
+//Spacings
 $desktop:0 8%;
 $mobile:0 .5rem;
-
-//Gap
+$container-padding: 3rem 0;
+$link-padding: .5rem 1rem;
 $gap:1.5rem;
+
+//Dimensions
+$fit-content-width: fit-content;
+$button-radius: 5px; 
+$card-width: 340px; 

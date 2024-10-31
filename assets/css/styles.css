@@ -194,7 +194,7 @@ nav a {
 #services .container article .text a:hover {
   background-color: #3c1b95;
   color: #fff;
-  box-shadow: 0 0 10px rgba(59, 27, 149, 0.9254901961);
+  box-shadow: 0 0 10px rgba(59, 27, 149, 0.93);
 }
 
 #plans {
@@ -266,6 +266,10 @@ nav a {
 }
 #plans .container .cards .card ul li {
   font-size: 1.2rem;
+}
+#plans .container .cards .card ul li i {
+  color: rgb(105, 166, 105);
+  margin: 0 0.5rem 0 0;
 }
 #plans .container .cards .card a {
   width: fit-content;
@@ -467,7 +471,7 @@ nav a {
   padding: 15px;
   width: 80%;
   max-width: 600px;
-  box-shadow: 0 0px 6px rgba(59, 27, 149, 0.9254901961);
+  box-shadow: 0 0px 6px rgba(59, 27, 149, 0.93);
 }
 #faq .container .faq-item .faq-question {
   background-color: #3c1b95;
@@ -483,7 +487,7 @@ nav a {
   transition: background-color 0.3s ease;
 }
 #faq .container .faq-item .faq-question:hover {
-  background-color: rgba(59, 27, 149, 0.9254901961);
+  background-color: rgba(59, 27, 149, 0.93);
 }
 #faq .container .faq-item .faq-answer {
   margin-top: 10px;

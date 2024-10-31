@@ -4,7 +4,7 @@
 #galery{
     
     align-items: center;
-    padding: 3rem 0;
+    padding: $container-padding;
     width: 100% ;
     background-color: $light-color;
     gap: 1rem;
@@ -66,13 +66,13 @@
                     }
     
                     a{
-                        width: fit-content;
+                        width: $fit-content-width;
                         margin: 1rem auto 0;
                         font-size: $font-small;
                         font-weight: $weight-normal;
-                        padding: .5rem 1rem;
+                        padding: $link-padding;
                         border: 1px solid rgba(255, 255, 255, 0.3);
-                        border-radius: 5px;
+                        border-radius: $button-radius;
                         background-color: $light-color;
                         color: $primary-color;
                         transition: .3s ease;
@@ -81,7 +81,7 @@
                         background-color: $primary-color;
                         color: $light-color;
                         transition: .3s ease;
-                        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                        box-shadow: 0 0 10px $link-hover-box-shadow;
                     }
                 }
             }
@@ -90,13 +90,13 @@
             }
         }
         a{
-            width: fit-content;
+            width: $fit-content-width;
             margin: 1rem auto 0;
             font-size: $font-small;
             font-weight: $weight-normal;
-            padding: .5rem 1rem;
+            padding: $link-padding;
             border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 5px;
+            border-radius: $button-radius;
             background-color: #8477a1;
             color: $light-color;
             transition: .3s ease;

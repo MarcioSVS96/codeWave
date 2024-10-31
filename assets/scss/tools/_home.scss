@@ -6,7 +6,7 @@
     width: 100%;
     margin-top: 15vh;
     background: linear-gradient(to right,$secundary-color,$primary-color );
-    padding: 3rem 0;
+    padding: $container-padding;
         .title{
             @include column;
             width: 50%;
@@ -25,15 +25,15 @@
                 color: $light-color;
             }
             a{
-                padding: .5rem 1rem;
+                padding: $link-padding;
                 margin: 0;
                 border: 2px solid $primary-color;
                 background-color: $light-color;
                 display: block;
                 color: $primary-color;
                 transition: .4s ease;
-                border-radius: 5px;
-                width: fit-content;
+                border-radius: $button-radius;
+                width: $fit-content-width;
                 font-size: $font-small;
                 font-weight: $weight-normal;
 
@@ -42,7 +42,7 @@
             a:hover{
                     background-color: $primary-color;
                     color: $light-color;
-                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5)
+                    box-shadow: 0 0 10px $link-hover-box-shadow;
             }
         }
     

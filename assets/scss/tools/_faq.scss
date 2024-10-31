@@ -3,7 +3,7 @@
 
 #faq{
     text-align: start;
-    padding: 3rem 0;
+    padding: $container-padding;
     height: auto;
 
     .container{
@@ -25,14 +25,14 @@
           }
           
           .faq-item {
-            background: #c4abd7;
+            background: $cta-bg-color;
             border: 1px solid $light-color;
             border-radius: 8px;
             margin: 10px auto;
             padding: 15px;
             width: 80%;
             max-width: 600px;
-            box-shadow: 0 0px 6px #3b1b95ec;
+            box-shadow: 0 0px 6px $faq-box-shadow;
 
             .faq-question {
               background-color: $primary-color;
@@ -48,7 +48,7 @@
               transition: background-color 0.3s ease;
             
               &:hover {
-                background-color: #3b1b95ec;
+                background-color: $faq-box-shadow;
               }
             }
 
