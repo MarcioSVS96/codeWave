@@ -19,7 +19,7 @@
         .subtitle{
             text-align: center;
             @include column;
-            gap: .5rem;
+            gap: 1rem;
 
             h2{
                 font-size: $font-larger;
@@ -36,6 +36,7 @@
         }
         .cards{
             @include center(space-between);
+            align-items: start;
             gap: $gap;
             text-align: center;
 

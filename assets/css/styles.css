@@ -16,7 +16,7 @@
 }
 
 hr {
-  border: 2px solid #3c1b95;
+  border: 2px solid #c4abd7;
 }
 
 header {
@@ -36,7 +36,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 nav a {
   color: #fff;
@@ -60,7 +60,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   width: 50%;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 #home .title h1 {
   font-size: 5rem;
@@ -144,12 +144,12 @@ nav a:hover {
 #services .container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 #services .container .subtitle {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 #services .container .subtitle h2 {
   font-size: 3.5rem;
@@ -170,7 +170,7 @@ nav a:hover {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 #services .container article .text h3 {
   font-size: 2rem;
@@ -220,7 +220,7 @@ nav a:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 #plans .container .subtitle h2 {
   font-size: 3.5rem;
@@ -238,7 +238,8 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  align-items: start;
+  gap: 1rem;
   text-align: center;
 }
 #plans .container .cards hr {
@@ -346,7 +347,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 0.5rem;
+  gap: 1rem;
   transition: height 0.5s;
 }
 #galery .container .galery-portfolio figure .text-portfolio h3 {
