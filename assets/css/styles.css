@@ -38,11 +38,15 @@ nav {
   align-items: center;
   gap: 1.5rem;
 }
-
 nav a {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
+  transition: 0.3s ease;
+}
+nav a:hover {
+  color: #c4abd7;
+  transition: 0.3s ease;
 }
 
 #home {
@@ -535,6 +539,11 @@ footer .container .footer-top ul {
 footer .container .footer-top ul li a {
   font-size: 2rem;
   color: #fff;
+  transition: 0.3s ease;
+}
+footer .container .footer-top ul li a:hover {
+  color: #c4abd7;
+  transition: 0.3s ease;
 }
 footer .container .copy p {
   font-size: 1.2rem;

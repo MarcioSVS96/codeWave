@@ -10,13 +10,21 @@ header{
     position: fixed;
     top: 0;
     z-index: 99
+
 }
 nav{
     @include center;
     gap: $gap;
+
+    a{
+        color: $light-color;
+        font-size: $font-small;
+        font-weight: $weight-normal;
+        transition: .3s ease;
+    }
+    a:hover{
+        color: $cta-bg-color;
+        transition: .3s ease;
+    }
 }
-nav a{
-    color: $light-color;
-    font-size: $font-small;
-    font-weight: $weight-normal;
-}
+

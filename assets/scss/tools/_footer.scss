@@ -32,6 +32,11 @@ footer{
                 li a{
                     font-size: $font-medium;
                     color: $light-color;
+                    transition: .3s ease;
+                }
+                li a:hover{
+                    color:$cta-bg-color;
+                    transition: .3s ease;
                 }
             }
 
