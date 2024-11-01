@@ -51,3 +51,14 @@ footer{
     }
 
 }
+
+@media (max-width: 1024px){
+    footer .container .footer-top{
+        flex-direction: column;
+        gap: 2rem;
+
+        nav{
+            align-items: center;
+        }
+    }
+}

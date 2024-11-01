@@ -717,4 +717,14 @@ footer .container .copy p a {
   color: #0cd5c9;
 }
 
+@media (max-width: 1024px) {
+  footer .container .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .container .footer-top nav {
+    align-items: center;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
