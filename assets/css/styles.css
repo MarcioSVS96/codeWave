@@ -556,6 +556,7 @@ nav a:hover {
 #cta .container p {
   font-size: 1.2rem;
   color: #fff;
+  font-weight: 700;
 }
 #cta .container a {
   font-size: 2rem;
@@ -578,6 +579,28 @@ nav a:hover {
   transition: 0.3s ease;
 }
 
+@media (max-width: 1024px) {
+  #cta {
+    background: rgb(0, 0, 0), url(/assets/img/background-cta.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0;
+  }
+  #cta .container {
+    width: 100%;
+    background: linear-gradient(to left, transparent, #0f0125);
+    padding: 0 2rem;
+  }
+  #cta .container h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #cta .container h2 {
+    font-size: 2.8rem;
+  }
+}
 #faq {
   text-align: start;
   padding: 3rem 0;

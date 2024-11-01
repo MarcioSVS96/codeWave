@@ -30,6 +30,7 @@
         p{
             font-size: $font-small;
             color: $light-color;
+            font-weight: $weight-normal;
         }
         a{
             font-size: $font-medium;
@@ -51,5 +52,30 @@
             box-shadow: 0 0 10px $link-hover-box-shadow;
             transition: .3s ease;
         }
+    }
+}
+
+@media (max-width: 1024px){
+    #cta{
+        background:  rgba(0, 0, 0, 1), url(/assets/img/background-cta.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding: 0;
+
+        .container{
+            width: 100%;
+            background: linear-gradient(to left,transparent, $secundary-color);
+            padding: 0 2rem;
+
+            h2{
+                font-size: $font-larger;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    #cta .container h2{
+        font-size: $font-medium-larger;
     }
 }
