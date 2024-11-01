@@ -62,7 +62,7 @@ header {
 }
 @media (max-width: 1024px) {
   header {
-    padding: 1.5rem 0;
+    padding: 0 1.5rem;
   }
 }
 
@@ -126,6 +126,20 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 1024px) {
+  #home {
+    padding: 1.5rem 0;
+  }
+  #home .title h1 {
+    font-size: 3.5rem;
+  }
+  #home .container {
+    padding: 0 1.5rem;
+  }
+  #home .container figure img {
+    width: 350px;
+  }
+}
 .st1 {
   opacity: 0.3;
   fill: #fff;

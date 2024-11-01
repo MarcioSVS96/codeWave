@@ -47,4 +47,20 @@
         }
     
 }
+@media (max-width: 1024px) {
+    #home{
+        padding: $container-padding-responsive;
 
+        .title h1{
+            font-size: $font-larger;
+        }
+
+        .container{
+            padding: 0 1.5rem;
+
+            figure img{
+                width: 350px;
+            }
+        }
+    }
+} 
