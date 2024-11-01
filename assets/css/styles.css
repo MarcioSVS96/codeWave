@@ -48,6 +48,11 @@ hr {
     box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
   }
 }
+@media (max-width: 500px) {
+  .btn-whatsapp-pulse {
+    bottom: 60px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
