@@ -69,3 +69,8 @@
         }
     }
 }
+@media (max-width: 1024px) {
+    #services .container .subtitle h2{
+        font-size: $font-medium-larger;
+    }
+} 
