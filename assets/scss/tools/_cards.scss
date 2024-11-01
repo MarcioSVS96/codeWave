@@ -104,5 +104,27 @@
 }
 
 @media (max-width: 1024px){
-    
+    #plans .container{
+        padding: 0 2rem;
+        gap: 2rem;
+
+        .subtitle h2{
+            font-size: $font-medium-larger;
+        }
+
+        .cards{
+            flex-direction: column;
+            align-items: center;
+
+            .card{
+                width: 400px;
+            }
+        }
+    }
+
+}
+@media (max-width: 768px){
+    #plans .container .cards .card{
+        width: 350px;
+    }
 }
