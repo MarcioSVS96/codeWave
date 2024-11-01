@@ -74,34 +74,36 @@
         padding: 0 2rem;
         .subtitle h2{
         font-size: $font-medium-larger;
+
+        figure img{
+            width: 350px;
+        }
     }
     } 
 } 
 @media (max-width: 768px) {
     #services {
         padding: 0 0 2rem 0;
-        .container{
-        
+        .container article{
+            flex-direction: column-reverse;
+            text-align: center;
+            gap: $gap;
 
-        article{
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: $gap;
             &:last-child {
                 flex-direction: column;
                 margin: 2rem 0 0 0;
             }
-    
+        
             .text{
                 align-items: center;
                 width: 100%;
             }
 
             figure img{
-                width: 350px;
+                width: 300px;
             }
-        }
-    } 
+        
+        } 
     }
         
         
