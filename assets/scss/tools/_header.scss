@@ -1,32 +1,75 @@
 @import 'mixin';
 @import 'variables';
 
-header{
-    @include center(space-between);
-    background: $primary-color;
-    height: 15vh;
-    width: 100%;
-    padding: $desktop;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    @media (max-width: 1024px) {
-        padding: 0 2rem;
-    } 
-}
-nav{
-    @include center;
-    gap: $gap;
+header {
+  @include center(space-between);
+  background: $primary-color;
+  height: 15vh;
+  width: 100%;
+  padding: $desktop;
+  position: fixed;
+  top: 0;
+  z-index: 99;
 
-    a{
-        color: $light-color;
-        font-size: $font-small;
-        font-weight: $weight-normal;
-        transition: .3s ease;
+  @media (max-width: 1024px) {
+    padding: 0 2rem;
+  }
+
+  button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: $light-color;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    button {
+      display: block; 
     }
-    a:hover{
-        color: $cta-bg-color;
-        transition: .3s ease;
+
+    nav {
+      display: none; 
     }
+
+    
+    .nav-open {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $gap;
+      position: absolute;
+      top: 15vh;
+      width: 100%;
+      background: $faq-box-shadow;
+      padding: 1rem;
+      right: 0;
+      a{
+        background-color: $primary-color;
+        width: fit-content;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+      }
+      
+    }
+  }
 }
 
+nav {
+  @include center;
+  gap: $gap;
+
+  a {
+    color: $light-color;
+    font-size: 1.5rem;
+    font-weight: $weight-normal;
+    transition: 0.3s ease;
+  }
+
+  a:hover {
+    color: $cta-bg-color;
+    transition: 0.3s ease;
+  }
+}

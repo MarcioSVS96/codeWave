@@ -22,4 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
             answer.style.display = answer.classList.contains("hidden") ? "none" : "block";
         });
     });
+    const menuButton = document.querySelector("header button");
+    const nav = document.querySelector("header nav");
+    
+    menuButton.addEventListener("click", function () {
+      nav.classList.toggle("nav-open");
+    });
+    
 });
