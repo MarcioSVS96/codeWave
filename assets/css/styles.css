@@ -266,6 +266,9 @@ nav a:hover {
 }
 
 @media (max-width: 1024px) {
+  #services .container {
+    padding: 0 2rem;
+  }
   #services .container .subtitle h2 {
     font-size: 2.8rem;
   }
@@ -273,9 +276,6 @@ nav a:hover {
 @media (max-width: 768px) {
   #services {
     padding: 0 0 2rem 0;
-  }
-  #services .container {
-    padding: 0 2rem;
   }
   #services .container article {
     flex-direction: column-reverse;

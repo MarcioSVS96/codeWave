@@ -70,15 +70,18 @@
     }
 }
 @media (max-width: 1024px) {
-    #services .container .subtitle h2{
+    #services .container{
+        padding: 0 2rem;
+        .subtitle h2{
         font-size: $font-medium-larger;
     }
+    } 
 } 
 @media (max-width: 768px) {
     #services {
         padding: 0 0 2rem 0;
         .container{
-        padding: 0 2rem;
+        
 
         article{
         flex-direction: column-reverse;
