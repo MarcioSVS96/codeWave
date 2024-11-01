@@ -572,7 +572,7 @@ nav a:hover {
 #cta {
   height: 55vh;
   width: 100%;
-  background-image: url(/assets/img/background-cta.webp);
+  background-image: url(assets/img/background-cta.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
