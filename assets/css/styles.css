@@ -546,7 +546,7 @@ nav a:hover {
   justify-content: center;
   gap: 1rem;
   text-align: center;
-  background: linear-gradient(to right, #c4abd7, #3c1b95, #0f0125);
+  background: linear-gradient(to right, transparent, #3c1b95, #0f0125);
   height: 100%;
 }
 #cta .container h2 {
