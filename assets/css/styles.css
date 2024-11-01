@@ -60,6 +60,11 @@ header {
   top: 0;
   z-index: 99;
 }
+@media (max-width: 1024px) {
+  header {
+    padding: 1.5rem 0;
+  }
+}
 
 nav {
   display: flex;

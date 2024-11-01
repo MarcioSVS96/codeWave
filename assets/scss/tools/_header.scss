@@ -9,8 +9,10 @@ header{
     padding: $desktop;
     position: fixed;
     top: 0;
-    z-index: 99
-
+    z-index: 99;
+    @media (max-width: 1024px) {
+        padding: $container-padding-responsive;
+    } 
 }
 nav{
     @include center;
