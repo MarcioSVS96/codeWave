@@ -270,6 +270,30 @@ nav a:hover {
     font-size: 2.8rem;
   }
 }
+@media (max-width: 768px) {
+  #services {
+    padding: 0 0 2rem 0;
+  }
+  #services .container {
+    padding: 0 2rem;
+  }
+  #services .container article {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1rem;
+  }
+  #services .container article:last-child {
+    flex-direction: column;
+    margin: 2rem 0 0 0;
+  }
+  #services .container article .text {
+    align-items: center;
+    width: 100%;
+  }
+  #services .container article figure img {
+    width: 350px;
+  }
+}
 #plans {
   height: auto;
   width: 100%;
