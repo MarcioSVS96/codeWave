@@ -140,6 +140,22 @@ nav a:hover {
     width: 350px;
   }
 }
+@media (max-width: 768px) {
+  #home {
+    padding: 1.5rem 0 0 0;
+  }
+  #home .container {
+    flex-direction: column;
+  }
+  #home .container .title {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  #home .container figure img {
+    width: 350px;
+  }
+}
 .st1 {
   opacity: 0.3;
   fill: #fff;

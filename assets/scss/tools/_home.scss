@@ -64,3 +64,21 @@
         }
     }
 } 
+@media (max-width: 768px) {
+    #home{
+        padding: 1.5rem 0 0 0;
+        
+        .container{
+            flex-direction: column;  
+
+            .title{
+                width: 100%;
+                text-align: center;
+                align-items: center;
+            }
+            figure img{
+                width: 350px;
+            }
+        }
+    }
+} 
