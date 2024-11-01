@@ -115,9 +115,15 @@
     }
 }
 @media (max-width: 768px){
-    #galery .container .galery-portfolio{
+    #galery .container{
+        h2{
+            font-size: $font-medium-larger;
+        }
+        .galery-portfolio{
         grid-template-columns: repeat(2, 1fr);
     }
+    }
+     
 }
 @media (max-width: 500px){
     #galery .container .galery-portfolio{
