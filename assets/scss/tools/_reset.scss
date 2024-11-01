@@ -9,6 +9,7 @@
 }
 body{
 	background-color: $light-color;
+	width: 100%;
 }
 .container{
     @include center(space-between);
