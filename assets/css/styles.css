@@ -664,6 +664,14 @@ nav a:hover {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  #faq .container {
+    padding: 0 2rem;
+  }
+  #faq .container .subtitle h2 {
+    font-size: 2.8rem;
+  }
+}
 footer {
   height: auto;
   width: 100%;

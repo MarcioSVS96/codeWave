@@ -71,3 +71,13 @@
           }
     }
 }
+
+@media (max-width: 768px){
+  #faq .container{
+    padding: 0 2rem;
+
+    .subtitle h2{
+      font-size: $font-medium-larger;
+    }
+  }
+}
