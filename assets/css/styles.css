@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+body {
+  background-color: #fff;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
