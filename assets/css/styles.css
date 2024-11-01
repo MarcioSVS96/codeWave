@@ -404,7 +404,7 @@ nav a:hover {
     align-items: center;
   }
   #plans .container .cards .card {
-    width: 400px;
+    width: 450px;
   }
 }
 @media (max-width: 768px) {
