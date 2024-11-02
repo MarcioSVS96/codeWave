@@ -1,81 +1,85 @@
-@import 'mixin';
-@import 'variables';
+@use 'tools/variables' as vars;
 
-#cta{
-    height: 55vh;
-    width: 100%;
-    background: url(/codeWave/assets/img/background-cta.webp);
+#cta {
+  height: 55vh;
+  width: 100%;
+  background: url(/codeWave/assets/img/background-cta.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-color: vars.$cta-bg-color;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    background: linear-gradient(to right, transparent, vars.$primary-color, vars.$secundary-color);
+    height: 100%;
+
+    h2 {
+      font-size: vars.$font-medium;
+      color: vars.$light-color;
+    }
+
+    p {
+      font-size: vars.$font-small;
+      color: vars.$light-color;
+      font-weight: vars.$weight-normal;
+    }
+
+    a {
+      font-size: vars.$font-medium;
+      color: vars.$light-color;
+      border: 2px solid vars.$light-color;
+      border-radius: 50%;
+      padding: 1rem;
+      height: 64px;
+      width: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s ease;
+    }
+
+    a:hover {
+      background-color: vars.$light-color;
+      color: vars.$primary-color;
+      border: 2px solid vars.$primary-color;
+      box-shadow: 0 0 10px vars.$link-hover-box-shadow;
+      transition: .3s ease;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #cta {
+    background: rgba(0, 0, 0, 1), url(assets/img/background-cta.webp);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
-    background-color: $cta-bg-color;
-    display: flex;
-    align-items: center;
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-        margin-left: auto;
-        justify-content: center;
-        gap: 1rem;
-        text-align: center;
-        background: linear-gradient(to right,transparent,$primary-color, $secundary-color);
-        height: 100%;
-    
-        h2{
-            font-size: $font-medium;
-            color: $light-color;
-        }
-        p{
-            font-size: $font-small;
-            color: $light-color;
-            font-weight: $weight-normal;
-        }
-        a{
-            font-size: $font-medium;
-            color: $light-color;
-            border: 2px solid $light-color;
-            border-radius: 50%;
-            padding: 1rem;
-            height: 64px;
-            width: 64px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: .3s ease;
-        }
-        a:hover{
-            background-color: $light-color;
-            color: $primary-color;
-            border: 2px solid $primary-color;
-            box-shadow: 0 0 10px $link-hover-box-shadow;
-            transition: .3s ease;
-        }
+    background-position: center;
+    padding: 0;
+
+    .container {
+      width: 100%;
+      background: linear-gradient(to left, transparent, vars.$secundary-color);
+      padding: 0 2rem;
+
+      h2 {
+        font-size: vars.$font-larger;
+      }
     }
+  }
 }
 
-@media (max-width: 1024px){
-    #cta{
-        background:  rgba(0, 0, 0, 1), url(assets/img/background-cta.webp);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        padding: 0;
-
-        .container{
-            width: 100%;
-            background: linear-gradient(to left,transparent, $secundary-color);
-            padding: 0 2rem;
-
-            h2{
-                font-size: $font-larger;
-            }
-        }
-    }
-}
-@media (max-width: 768px){
-    #cta .container h2{
-        font-size: $font-medium-larger;
-    }
+@media (max-width: 768px) {
+  #cta .container h2 {
+    font-size: vars.$font-medium-larger;
+  }
 }
