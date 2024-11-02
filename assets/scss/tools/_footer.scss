@@ -1,64 +1,66 @@
-@import 'mixin';
-@import 'variables';
+@use 'tools/mixin' as mix;
+@use 'tools/variables' as vars;
 
-footer{
-    height: auto;
-    width: 100%;
+footer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, vars.$secundary-color, vars.$primary-color);
+  padding: vars.$container-padding;
+
+  .container {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right,$secundary-color,$primary-color );
-    padding: $container-padding;
 
-    .container{
+    .footer-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      nav {
         display: flex;
         flex-direction: column;
-        
+        align-items: start;
+        gap: 1rem;
+      }
 
-        .footer-top{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            nav{
-                display: flex;
-                flex-direction: column;
-                align-items: start;
-                gap: 1rem;
-            }
-            ul{
-                display: flex;
-                gap: 1rem;
+      ul {
+        display: flex;
+        gap: 1rem;
 
-                li a{
-                    font-size: $font-medium;
-                    color: $light-color;
-                    transition: .3s ease;
-                }
-                li a:hover{
-                    color:$cta-bg-color;
-                    transition: .3s ease;
-                }
-            }
+        li a {
+          font-size: vars.$font-medium;
+          color: vars.$light-color;
+          transition: .3s ease;
+        }
 
+        li a:hover {
+          color: vars.$cta-bg-color;
+          transition: .3s ease;
         }
-        .copy p{
-            font-size: $font-small;
-            color: $light-color;
-        }
-        .copy p a{
-            color: #0cd5c9;
-        }
+      }
     }
 
+    .copy p {
+      font-size: vars.$font-small;
+      color: vars.$light-color;
+    }
+
+    .copy p a {
+      color: #0cd5c9;
+    }
+  }
 }
 
-@media (max-width: 1024px){
-    footer .container .footer-top{
-        flex-direction: column;
-        gap: 2rem;
+@media (max-width: 1024px) {
+  footer .container .footer-top {
+    flex-direction: column;
+    gap: 2rem;
 
-        nav{
-            align-items: center;
-        }
+    nav {
+      align-items: center;
     }
+  }
 }
