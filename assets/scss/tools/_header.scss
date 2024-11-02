@@ -1,12 +1,12 @@
-@use 'tools/mixin' as mix;
-@use 'tools/variables' as vars;
+@import 'mixin';
+@import 'variables';
 
 header {
-  @include mix.center(space-between);
-  background: vars.$primary-color;
+  @include center(space-between);
+  background: $primary-color;
   height: 15vh;
   width: 100%;
-  padding: vars.$desktop;
+  padding: $desktop;
   position: fixed;
   top: 0;
   z-index: 99;
@@ -20,54 +20,56 @@ header {
     background: none;
     border: none;
     font-size: 2rem;
-    color: vars.$light-color;
+    color: $light-color;
     cursor: pointer;
   }
 
   @media (max-width: 768px) {
     button {
-      display: block;
+      display: block; 
     }
 
     nav {
-      display: none;
+      display: none; 
     }
 
+    
     .nav-open {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: vars.$gap;
+      gap: $gap;
       position: absolute;
       top: 15vh;
       width: 100%;
-      background: vars.$faq-box-shadow;
+      background: $faq-box-shadow;
       padding: 1rem;
       right: 0;
-      a {
-        background-color: vars.$primary-color;
+      a{
+        background-color: $primary-color;
         width: fit-content;
         text-align: center;
         border-radius: 5px;
         width: 100%;
       }
+      
     }
   }
 }
 
 nav {
-  @include mix.center;
-  gap: vars.$gap;
+  @include center;
+  gap: $gap;
 
   a {
-    color: vars.$light-color;
+    color: $light-color;
     font-size: 1.5rem;
-    font-weight: vars.$weight-normal;
+    font-weight: $weight-normal;
     transition: 0.3s ease;
   }
 
   a:hover {
-    color: vars.$cta-bg-color;
+    color: $cta-bg-color;
     transition: 0.3s ease;
   }
 }
