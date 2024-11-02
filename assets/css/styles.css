@@ -1,10 +1,10 @@
-/* Error: Undefined mixin.
- *    ,
- * 15 |     @include center(space-between);
- *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\tools\_reset.scss 15:5  @use
- *   scss\styles.scss 3:1         root stylesheet */
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use 'tools/variables' as vars;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\tools\_reset.scss 1:1  @use
+ *   scss\styles.scss 3:1        root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 15 \2502      @include center(space-between);\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\tools\\_reset.scss 15:5  @use\a   scss\\styles.scss 3:1         root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use 'tools/variables' as vars;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\tools\\_reset.scss 1:1  @use\a   scss\\styles.scss 3:1        root stylesheet";
 }
