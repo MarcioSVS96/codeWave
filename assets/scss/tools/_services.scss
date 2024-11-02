@@ -1,112 +1,110 @@
-@use 'tools/mixin' as mix;
-@use 'tools/variables' as vars;
+@import 'mixin';
+@import 'variables';
 
-#services {
-  height: auto;
-  width: 100%;
-  padding: vars.$container-padding;
+#services{
+    height: auto;
+    width: 100%;
+    padding: $container-padding;
+    
+    .container{
+        @include column;
+        gap: $gap;
 
-  .container {
-    @include mix.column;
-    gap: vars.$gap;
+        .subtitle{
+            @include column;
+            gap: $gap;
 
-    .subtitle {
-      @include mix.column;
-      gap: vars.$gap;
+            h2{
+                font-size: $font-larger;
+                font-weight: $weight-bold;
+                color: $primary-color;
+            }
+            hr{
+                width: 100px;
+                height: 3px;
+                margin: auto;
+            }
+        }
 
-      h2 {
-        font-size: vars.$font-larger;
-        font-weight: vars.$weight-bold;
-        color: vars.$primary-color;
-      }
+        article{
+            @include center(space-between);
 
-      hr {
-        width: 100px;
-        height: 3px;
-        margin: auto;
-      }
+            .text{
+                width: 50%;
+                @include column;
+                gap: $gap;
+
+
+                h3{
+                    font-size: $font-medium;
+                    font-weight: $weight-normal;
+                    color: $primary-color;
+                }
+
+                p{
+                    font-size: $font-small;
+                    font-weight: $weight-light;
+                    color: $dark-color;
+                }
+
+                a{
+                    padding: $link-padding;
+                    margin: 0;
+                    border: 2px solid $primary-color;
+                    background-color: $light-color;
+                    display: block;
+                    color: $primary-color;
+                    transition: .4s ease;
+                    border-radius: $button-radius;
+                    width: $fit-content-width;
+                    font-size: $font-small;
+                    font-weight: $weight-normal;
+                }
+                a:hover{
+                    background-color: $primary-color;
+                    color: $light-color;
+                    box-shadow: 0 0 10px $faq-box-shadow;
+            }
+            }
+        }
     }
-
-    article {
-      @include mix.center(space-between);
-
-      .text {
-        width: 50%;
-        @include mix.column;
-        gap: vars.$gap;
-
-        h3 {
-          font-size: vars.$font-medium;
-          font-weight: vars.$weight-normal;
-          color: vars.$primary-color;
-        }
-
-        p {
-          font-size: vars.$font-small;
-          font-weight: vars.$weight-light;
-          color: vars.$dark-color;
-        }
-
-        a {
-          padding: vars.$link-padding;
-          margin: 0;
-          border: 2px solid vars.$primary-color;
-          background-color: vars.$light-color;
-          display: block;
-          color: vars.$primary-color;
-          transition: .4s ease;
-          border-radius: vars.$button-radius;
-          width: vars.$fit-content-width;
-          font-size: vars.$font-small;
-          font-weight: vars.$weight-normal;
-        }
-
-        a:hover {
-          background-color: vars.$primary-color;
-          color: vars.$light-color;
-          box-shadow: 0 0 10px vars.$faq-box-shadow;
-        }
-      }
-    }
-  }
 }
-
 @media (max-width: 1024px) {
-  #services .container {
-    padding: 0 2rem;
+    #services .container{
+        padding: 0 2rem;
+        .subtitle h2{
+        font-size: $font-medium-larger;
 
-    .subtitle h2 {
-      font-size: vars.$font-medium-larger;
+        figure img{
+            width: 350px;
+        }
     }
-
-    figure img {
-      width: 350px;
-    }
-  }
-}
-
+    } 
+} 
 @media (max-width: 768px) {
-  #services {
-    padding: 0 0 2rem 0;
+    #services {
+        padding: 0 0 2rem 0;
+        .container article{
+            flex-direction: column-reverse;
+            text-align: center;
+            gap: $gap;
 
-    .container article {
-      flex-direction: column-reverse;
-      text-align: center;
-      gap: vars.$gap;
+            &:last-child {
+                flex-direction: column;
+                margin: 2rem 0 0 0;
+            }
+        
+            .text{
+                align-items: center;
+                width: 100%;
+            }
 
-      &:last-child {
-        flex-direction: column;
-        margin: 2rem 0 0 0;
-      }
-
-      .text {
-        align-items: center;
-        width: 100%;
-      }
-
-      figure img {
-        width: 300px;
-      }
+            figure img{
+                width: 300px;
+            }
+        
+        } 
     }
-  }
-}
+        
+        
+} 
