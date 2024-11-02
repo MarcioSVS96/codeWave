@@ -317,7 +317,7 @@ nav a:hover {
   #services .container .subtitle h2 {
     font-size: 2.8rem;
   }
-  #services .container .subtitle h2 figure img {
+  #services .container figure img {
     width: 350px;
   }
 }
@@ -699,7 +699,7 @@ nav a:hover {
 #faq .container .faq-item .faq-answer {
   margin-top: 10px;
   padding: 10px;
-  display: none; /* Inicialmente oculto */
+  display: none;
 }
 #faq .container .faq-item .faq-answer.hidden {
   display: none;
