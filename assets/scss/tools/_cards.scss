@@ -1,133 +1,139 @@
-@import 'mixin';
-@import 'variables';
+@use 'tools/variables' as vars;
 
-#plans{
-    height: auto;
-    width: 100%;
+#plans {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  background: linear-gradient(to right, vars.$primary-color, vars.$secundary-color);
+  position: relative;
+  padding: vars.$container-padding;
+
+  .container {
     display: flex;
-    align-items: start;
-    background: linear-gradient(to right,$primary-color, $secundary-color);
-    position: relative;
-    padding: $container-padding;
+    flex-direction: column;
+    align-items: normal;
+    gap: 1rem;
 
+    .subtitle {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
 
-    .container{
+      h2 {
+        font-size: vars.$font-larger;
+        color: vars.$light-color;
+      }
+
+      hr {
+        margin: auto;
+      }
+
+      p {
+        font-size: vars.$font-small;
+        font-weight: vars.$weight-normal;
+        color: vars.$light-color;
+      }
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: vars.$gap;
+      text-align: center;
+
+      hr {
+        margin: .3rem 0;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .card {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        padding: 1rem;
+        width: vars.$card-width;
+        color: vars.$light-color;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
-        align-items: normal;
-        gap: 1rem;
+        transition: .3s ease;
 
-        .subtitle{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            h2{
-                font-size: $font-larger;
-                color: $light-color;
-            }
-            hr{
-                margin: auto;
-            }
-            p{
-                font-size: $font-small;
-                font-weight: $weight-normal;
-                color: $light-color;
-            }
+        h3 {
+          font-size: 1.8rem;
+          font-weight: vars.$weight-normal;
         }
-        .cards{
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            gap: $gap;
-            text-align: center;
 
-            hr{
-                margin: .3rem 0;
-                border:1px solid rgba(255, 255, 255, 0.3);
-            }
-
-            .card{
-                border: 1px solid rgba(255, 255, 255, 0.3);
-                border-radius: 10px;
-                padding: 1rem;
-                width: $card-width;
-                color: $light-color;
-                background: rgba(255, 255, 255, 0.2);
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                display: flex;
-                flex-direction: column;
-                transition: .3s ease;
-
-                h3{
-                    font-size: 1.8rem;
-                    font-weight: $weight-normal;
-                }
-                p{
-                    font-size: $font-small;
-                    font-weight: $weight-bold;
-                }
-                ul{
-                    text-align: start;
-
-                    li{
-                        font-size: $font-small;
-
-                        i{
-                            color: rgb(105, 166, 105);
-                            margin: 0 .5rem 0 0;
-                        }
-                    }
-                }
-                a{
-                    width: $fit-content-width;
-                    margin: 1rem auto 0;
-                    font-size: $font-small;
-                    font-weight: $weight-normal;
-                    padding: $link-padding;
-                    border: 1px solid rgba(255, 255, 255, 0.3);
-                    border-radius: $button-radius;
-                    background-color: rgba(255, 255, 255, 0.3);
-                    color: $light-color;
-                    transition: .3s ease;
-                }
-                a:hover{
-                    background-color: $light-color;
-                    color: $primary-color;
-                    transition: .3s ease;
-                }
-            }
-            .card:hover{
-                box-shadow: 0 0 10px $link-hover-box-shadow;
-                transition: .3s ease;
-            }
+        p {
+          font-size: vars.$font-small;
+          font-weight: vars.$weight-bold;
         }
+
+        ul {
+          text-align: start;
+
+          li {
+            font-size: vars.$font-small;
+
+            i {
+              color: rgb(105, 166, 105);
+              margin: 0 .5rem 0 0;
+            }
+          }
+        }
+
+        a {
+          width: vars.$fit-content-width;
+          margin: 1rem auto 0;
+          font-size: vars.$font-small;
+          font-weight: vars.$weight-normal;
+          padding: vars.$link-padding;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          border-radius: vars.$button-radius;
+          background-color: rgba(255, 255, 255, 0.3);
+          color: vars.$light-color;
+          transition: .3s ease;
+        }
+
+        a:hover {
+          background-color: vars.$light-color;
+          color: vars.$primary-color;
+          transition: .3s ease;
+        }
+      }
+
+      .card:hover {
+        box-shadow: 0 0 10px vars.$link-hover-box-shadow;
+        transition: .3s ease;
+      }
     }
+  }
 }
 
-@media (max-width: 1024px){
-    #plans .container{
-        padding: 0 2rem;
-        gap: 2rem;
+@media (max-width: 1024px) {
+  #plans .container {
+    padding: 0 2rem;
+    gap: 2rem;
 
-        .subtitle h2{
-            font-size: $font-medium-larger;
-        }
-
-        .cards{
-            flex-direction: column;
-            align-items: center;
-
-            .card{
-                width: 450px;
-            }
-        }
+    .subtitle h2 {
+      font-size: vars.$font-medium-larger;
     }
 
+    .cards {
+      flex-direction: column;
+      align-items: center;
+
+      .card {
+        width: 450px;
+      }
+    }
+  }
 }
-@media (max-width: 768px){
-    #plans .container .cards .card{
-        width: 350px;
-    }
+
+@media (max-width: 768px) {
+  #plans .container .cards .card {
+    width: 350px;
+  }
 }
