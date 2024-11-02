@@ -378,7 +378,6 @@ nav a:hover {
 #plans .container .cards {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   align-items: start;
   gap: 1rem;
   text-align: center;

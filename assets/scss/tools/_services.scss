@@ -7,11 +7,13 @@
     padding: $container-padding;
     
     .container{
-        @include column;
+        display: flex;
+        flex-direction: column;
         gap: $gap;
 
         .subtitle{
-            @include column;
+            display: flex;
+            flex-direction: column;
             gap: $gap;
 
             h2{
@@ -33,7 +35,8 @@
 
             .text{
                 width: 50%;
-                @include column;
+                display: flex;
+                flex-direction: column;
                 gap: $gap;
 
 

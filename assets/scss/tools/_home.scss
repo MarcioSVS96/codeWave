@@ -8,7 +8,8 @@
     background: linear-gradient(to right,$secundary-color,$primary-color );
     padding: $container-padding;
         .title{
-            @include column;
+            display: flex;
+            flex-direction: column;
             width: 50%;
             gap: $gap;
     
