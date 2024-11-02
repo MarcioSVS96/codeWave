@@ -1,87 +1,84 @@
-@use 'tools/mixin' as mix;
-@use 'tools/variables' as vars;
+@import 'mixin';
+@import 'variables';
 
-#home {
-  height: 85vh;
-  width: 100%;
-  margin-top: 15vh;
-  background: linear-gradient(to right, vars.$secundary-color, vars.$primary-color);
-  padding: vars.$container-padding;
+#home{
+    height: 85vh;
+    width: 100%;
+    margin-top: 15vh;
+    background: linear-gradient(to right,$secundary-color,$primary-color );
+    padding: $container-padding;
+        .title{
+            @include column;
+            width: 50%;
+            gap: $gap;
+    
+            h1{
+                font-size: $font-ext-larger;
+                font-weight: $weight-bold;
+                line-height: 1;
+                color: $light-color;
+            }
+    
+            p{
+                font-size: $font-small;
+                font-weight: $weight-normal;
+                color: $light-color;
+            }
+            a{
+                padding: $link-padding;
+                margin: 0;
+                border: 2px solid $primary-color;
+                background-color: $light-color;
+                display: block;
+                color: $primary-color;
+                transition: .4s ease;
+                border-radius: $button-radius;
+                width: $fit-content-width;
+                font-size: $font-small;
+                font-weight: $weight-normal;
 
-  .title {
-    @include mix.column;
-    width: 50%;
-    gap: vars.$gap;
-
-    h1 {
-      font-size: vars.$font-ext-larger;
-      font-weight: vars.$weight-bold;
-      line-height: 1;
-      color: vars.$light-color;
-    }
-
-    p {
-      font-size: vars.$font-small;
-      font-weight: vars.$weight-normal;
-      color: vars.$light-color;
-    }
-
-    a {
-      padding: vars.$link-padding;
-      margin: 0;
-      border: 2px solid vars.$primary-color;
-      background-color: vars.$light-color;
-      display: block;
-      color: vars.$primary-color;
-      transition: .4s ease;
-      border-radius: vars.$button-radius;
-      width: vars.$fit-content-width;
-      font-size: vars.$font-small;
-      font-weight: vars.$weight-normal;
-    }
-
-    a:hover {
-      background-color: vars.$primary-color;
-      color: vars.$light-color;
-      box-shadow: 0 0 10px vars.$link-hover-box-shadow;
-    }
-  }
+                
+            }
+            a:hover{
+                    background-color: $primary-color;
+                    color: $light-color;
+                    box-shadow: 0 0 10px $link-hover-box-shadow;
+            }
+        }
+    
 }
-
 @media (max-width: 1024px) {
-  #home {
-    padding: vars.$container-padding-responsive;
+    #home{
+        padding: $container-padding-responsive;
 
-    .title h1 {
-      font-size: vars.$font-larger;
+        .title h1{
+            font-size: $font-larger;
+        }
+
+        .container{
+            padding: 0 2rem;
+
+            figure img{
+                width: 350px;
+            }
+        }
     }
-
-    .container {
-      padding: 0 2rem;
-
-      figure img {
-        width: 350px;
-      }
-    }
-  }
-}
-
+} 
 @media (max-width: 768px) {
-  #home {
-    padding: 1.5rem 0 0 0;
+    #home{
+        padding: 1.5rem 0 0 0;
+        
+        .container{
+            flex-direction: column;  
 
-    .container {
-      flex-direction: column;
-
-      .title {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      figure img {
-        width: 300px;
-      }
+            .title{
+                width: 100%;
+                text-align: center;
+                align-items: center;
+            }
+            figure img{
+                width: 300px;
+            }
+        }
     }
-  }
-}
+} 
