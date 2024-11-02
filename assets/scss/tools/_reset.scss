@@ -1,61 +1,56 @@
-@use 'tools/variables' as vars;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-decoration: none;
-  list-style: none;
+@import 'variables';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
-
-body {
-  background-color: vars.$light-color;
-  width: 100%;
+body{
+	background-color: $light-color;
+	width: 100%;
 }
-
-.container {
-  @include mix.center(space-between);
-  height: 85%;
-  padding: vars.$desktop;
+.container{
+    @include center(space-between);
+    height: 85%;
+    padding: $desktop;
 }
-
-hr {
-  border: 2px solid vars.$cta-bg-color;
+hr{
+    border: 2px solid $cta-bg-color;
 }
-
 .btn-whatsapp-pulse {
-  background: #25d366;
-  color: white;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0;
-  height: 0;
-  padding: 35px;
-  text-decoration: none;
-  border-radius: 50%;
-  animation-name: pulse;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
+	background: #25d366;
+	color: white;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
 }
 
 @keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-  }
-  80% {
-    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-  }
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
 }
 
-@media (max-width: 500px) {
-  .btn-whatsapp-pulse {
-    bottom: 60px;
-  }
+@media (max-width: 500px){
+	.btn-whatsapp-pulse{
+		bottom: 60px;
+	}
 }
