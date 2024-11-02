@@ -12,7 +12,9 @@ body{
 	width: 100%;
 }
 .container{
-    @include center(space-between);
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
     height: 85%;
     padding: $desktop;
 }
