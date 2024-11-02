@@ -1,4 +1,5 @@
-@use 'tools/global' as *;
+@use 'tools/mixin';
+@use 'tools/variables';
 @use 'tools/reset';
 @use 'tools/header';
 @use 'tools/home';
