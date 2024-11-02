@@ -27,7 +27,9 @@
         }
 
         article{
-            @include center(space-between);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
 
             .text{
                 width: 50%;
