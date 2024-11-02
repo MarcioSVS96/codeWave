@@ -2,7 +2,9 @@
 @import 'variables';
 
 header {
-  @include center(space-between);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: $primary-color;
   height: 15vh;
   width: 100%;
