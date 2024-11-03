@@ -524,16 +524,11 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
   transition: height 0.5s;
 }
 #galery .container .galery-portfolio figure .text-portfolio h3 {
   color: #fff;
   font-size: 2rem;
-}
-#galery .container .galery-portfolio figure .text-portfolio p {
-  color: #fff;
-  font-size: 1.2rem;
 }
 #galery .container .galery-portfolio figure .text-portfolio a {
   width: fit-content;

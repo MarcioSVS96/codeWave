@@ -69,17 +69,11 @@
           align-items: center;
           justify-content: center;
           text-align: center;
-          gap: 1rem;
           transition: height 0.5s;
 
           h3 {
             color: vars.$light-color;
             font-size: vars.$font-medium;
-          }
-
-          p {
-            color: vars.$light-color;
-            font-size: vars.$font-small;
           }
 
           a {
