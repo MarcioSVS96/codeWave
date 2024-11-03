@@ -554,22 +554,26 @@ nav a:hover {
 #galery .container .galery-portfolio figure:hover .text-portfolio {
   height: 100%;
 }
-#galery .container a {
+#galery .container button {
   width: fit-content;
   margin: 1rem auto 0;
   font-size: 1.2rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
   border-radius: 5px;
-  background-color: #8477a1;
+  background-color: #3c1b95;
   color: #fff;
   transition: 0.3s ease;
+  margin: auto;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(59, 27, 149, 0.93);
 }
-#galery .container a:hover {
+#galery .container button:hover {
   background-color: #fff;
   color: #3c1b95;
   transition: 0.3s ease;
+  border: 1px solid #3c1b95;
 }
 
 @media (max-width: 1024px) {

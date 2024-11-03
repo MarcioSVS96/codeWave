@@ -106,23 +106,28 @@
       }
     }
 
-    a {
+    button {
       width: vars.$fit-content-width;
       margin: 1rem auto 0;
       font-size: vars.$font-small;
       font-weight: vars.$weight-normal;
       padding: vars.$link-padding;
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 1px solid vars.$light-color;
       border-radius: vars.$button-radius;
-      background-color: #8477a1;
+      background-color: vars.$primary-color;
       color: vars.$light-color;
       transition: .3s ease;
+      margin: auto;
+      cursor: pointer;
+      box-shadow: 0 0 10px vars.$faq-box-shadow;
+
     }
 
-    a:hover {
+    button:hover {
       background-color: vars.$light-color;
       color: vars.$primary-color;
       transition: .3s ease;
+      border: 1px solid vars.$primary-color
     }
   }
 }
