@@ -12,10 +12,27 @@
     flex-direction: column;
     gap: 1rem;
 
-    h2 {
-      font-size: vars.$font-larger;
-      font-weight: vars.$weight-bold;
-      color: vars.$primary-color;
+    .subtitle {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      h2 {
+        font-size: vars.$font-larger;
+        color: vars.$primary-color;
+        font-weight: vars.$weight-bold;
+      }
+
+      hr {
+        margin: auto;
+      }
+
+      p {
+        font-size: vars.$font-small;
+        font-weight: vars.$weight-normal;
+        color: vars.$secundary-color;
+      }
     }
 
     .galery-portfolio {

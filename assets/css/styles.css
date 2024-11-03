@@ -472,10 +472,24 @@ nav a:hover {
   flex-direction: column;
   gap: 1rem;
 }
-#galery .container h2 {
+#galery .container .subtitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#galery .container .subtitle h2 {
   font-size: 3.5rem;
-  font-weight: 900;
   color: #3c1b95;
+  font-weight: 900;
+}
+#galery .container .subtitle hr {
+  margin: auto;
+}
+#galery .container .subtitle p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f0125;
 }
 #galery .container .galery-portfolio {
   display: grid;
