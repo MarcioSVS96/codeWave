@@ -29,4 +29,27 @@ document.addEventListener("DOMContentLoaded", function () {
       nav.classList.toggle("nav-open");
     });
     
+    document.getElementById('toggle-projects').addEventListener('click', function() {
+        const ghostProjects = document.querySelectorAll('.ghost');
+        const button = this;
+      
+        ghostProjects.forEach(project => {
+          project.style.display = project.style.display === 'none' ? 'block' : 'none';
+        });
+      
+        if (button.innerText === 'Veja mais Modelos de Projetos') {
+          button.innerText = 'Ver menos';
+          window.location.href = '#galery';
+        } else {
+          button.innerText = 'Veja mais Modelos de Projetos';
+          window.location.href = '#galery';
+        }
+      });
+      
+      // Para garantir que os projetos com a classe 'ghost' sejam inicialmente ocultados:
+      document.querySelectorAll('.ghost').forEach(project => {
+        project.style.display = 'none';
+      });
+      
 });
+

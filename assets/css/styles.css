@@ -497,6 +497,9 @@ nav a:hover {
   gap: 1rem;
   width: 100%;
 }
+#galery .container .galery-portfolio .ghost {
+  display: none;
+}
 #galery .container .galery-portfolio figure {
   height: 200px;
   position: relative;
