@@ -46,8 +46,9 @@
         position: relative;
         overflow: hidden;
         cursor: default;
-        border: 1px solid vars.$light-color;
+        border: 1px solid vars.$primary-color;
         border-radius: 10px;
+        box-shadow: 0 0 8px vars.$faq-box-shadow;
 
         img {
           height: 100%;

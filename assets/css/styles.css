@@ -502,8 +502,9 @@ nav a:hover {
   position: relative;
   overflow: hidden;
   cursor: default;
-  border: 1px solid #fff;
+  border: 1px solid #3c1b95;
   border-radius: 10px;
+  box-shadow: 0 0 8px rgba(59, 27, 149, 0.93);
 }
 #galery .container .galery-portfolio figure img {
   height: 100%;
