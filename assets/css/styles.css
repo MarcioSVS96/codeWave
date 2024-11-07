@@ -378,9 +378,9 @@ nav a:hover {
 }
 #plans .container .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
-  gap: 1rem;
+  gap: 2rem;
   text-align: center;
 }
 #plans .container .cards hr {
@@ -391,7 +391,7 @@ nav a:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 1rem;
-  width: 340px;
+  width: 440px;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
