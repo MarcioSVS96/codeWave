@@ -737,6 +737,9 @@ nav a:hover {
   #faq .container .subtitle h2 {
     font-size: 2.8rem;
   }
+  #faq .container .faq-item {
+    width: 100%;
+  }
 }
 footer {
   height: auto;
