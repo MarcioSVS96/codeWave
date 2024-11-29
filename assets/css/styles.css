@@ -597,7 +597,7 @@ nav a:hover {
 #cta {
   height: 55vh;
   width: 100%;
-  background: url(/codeWave/assets/img/background-cta.webp);
+  background: url(/assets/img/background-cta.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
