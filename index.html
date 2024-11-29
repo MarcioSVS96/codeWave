@@ -78,6 +78,7 @@
           title="Ir para o início da página"
           aria-label="Início"
           tabindex="0"
+          onclick="navigateWithoutHash(event)"
           >Início</a
         >
         <a
@@ -85,6 +86,7 @@
           title="Conheça nossos serviços"
           aria-label="Serviços"
           tabindex="0"
+          onclick="navigateWithoutHash(event)"
           >Serviços</a
         >
         <a
@@ -92,6 +94,7 @@
           title="Veja nossos planos"
           aria-label="Valores"
           tabindex="0"
+          onclick="navigateWithoutHash(event)"
           >Valores</a
         >
         <a
@@ -99,6 +102,7 @@
           title="Portfólio de projetos"
           aria-label="Portfólio"
           tabindex="0"
+          onclick="navigateWithoutHash(event)"
           >Portfólio</a
         >
         <a
@@ -106,6 +110,7 @@
           title="Perguntas frequentes"
           aria-label="Perguntas e Respostas"
           tabindex="0"
+          onclick="navigateWithoutHash(event)"
           >Perguntas e Respostas</a
         >
       </nav>
@@ -696,5 +701,7 @@
     >
       <i class="fab fa-whatsapp"></i>
     </a>
+
+    <script> function navigateWithoutHash(event) { event.preventDefault(); const targetId = event.target.getAttribute("href").substring(1); document.getElementById(targetId).scrollIntoView(); history.pushState(null, null, ' '); }</script>
   </body>
 </html>
